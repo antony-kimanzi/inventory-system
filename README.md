@@ -1,5 +1,5 @@
-# Inventory System
-#### The app is An Inventory System, 20/12/2024
+# Inventory Management System
+#### The app is An Inventory Management System, 20/12/2024
 #### **By Antony Wambugu**
 ## Description
 This project focuses on building an Inventory Management System designed to streamline the management of inventory items for warehouses or businesses. The system leverages modern technologies such as SQLAlchemy for database modeling, React for a user-friendly frontend interface, and a fast API for handling transactions. It provides dynamic and efficient tools to manage products, monitor stock levels, and track suppliers.
