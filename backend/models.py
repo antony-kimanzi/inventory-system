@@ -9,8 +9,6 @@ def get_db():
     db = Session()
     try:
         yield db
-    except Exception as e:
-        print(f"Error: {e}")
     finally:
         db.close()
 
