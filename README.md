@@ -16,7 +16,7 @@ This project focuses on building an Inventory Management System designed to stre
 You can access the slide of the presentation using this link [inventory-system-google-slideshow](https://docs.google.com/presentation/d/1Nw5nHUNy94hQbmre2Rne3wUQIlYHCMUcaODTQrzzEZc/edit?usp=sharing)
 
 ## Demo Presentation
-* You can view the demo on [presentation](https://drive.google.com/file/d/1NJ6tXMja1zmcXiMkiAk9CXGaHehVtEsO/view)
+* You can view the demonstration of the app on [project-presentation](https://drive.google.com/file/d/1NJ6tXMja1zmcXiMkiAk9CXGaHehVtEsO/view)
 
 ## Known Bugs
 There is a problem with the loading of data due to rendering.
