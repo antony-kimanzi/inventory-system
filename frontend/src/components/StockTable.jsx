@@ -7,7 +7,7 @@ const StockTable = () => {
 
   // Fetch all stocks
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/stocks")
+    fetch("https://inventory-system-y7yr.onrender.com/stocks")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch stocks.");
@@ -25,7 +25,7 @@ const StockTable = () => {
       return;
     }
 
-    fetch("http://127.0.0.1:8000/stocks", {
+    fetch("https://inventory-system-y7yr.onrender.com/stocks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ 
@@ -63,7 +63,7 @@ const StockTable = () => {
       ...(updatedQuantity && { quantity: Number(updatedQuantity) }),
     };
 
-    fetch(`http://127.0.0.1:8000/stocks/${id}`, {
+    fetch(`https://inventory-system-y7yr.onrender.com/stocks/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedData),
@@ -90,7 +90,7 @@ const StockTable = () => {
 
   // Delete a stock
   const handleDelete = (id) => {
-    fetch(`http://127.0.0.1:8000/stocks/${id}`, { method: "DELETE" })
+    fetch(`https://inventory-system-y7yr.onrender.com/stocks/${id}`, { method: "DELETE" })
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to delete stock.");

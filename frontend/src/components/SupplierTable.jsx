@@ -6,14 +6,14 @@ const SupplierTable = () => {
 
   // Fetch all suppliers
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/suppliers")
+    fetch("https://inventory-system-y7yr.onrender.com/suppliers")
       .then((response) => response.json())
       .then((data) => setSuppliers(data));
   }, []);
 
   // Create a new supplier
   const handleCreate = () => {
-    fetch("http://127.0.0.1:8000/suppliers", {
+    fetch("https://inventory-system-y7yr.onrender.com/suppliers", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -42,7 +42,7 @@ const SupplierTable = () => {
       ...(updatedContact && { contact: updatedContact }),
     };
 
-    fetch(`http://127.0.0.1:8000/suppliers/${id}`, {
+    fetch(`https://inventory-system-y7yr.onrender.com/suppliers/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedData),
@@ -61,7 +61,7 @@ const SupplierTable = () => {
 
   // Delete a supplier
   const handleDelete = (id) => {
-    fetch(`http://127.0.0.1:8000/suppliers/${id}`, { method: "DELETE" })
+    fetch(`https://inventory-system-y7yr.onrender.com/suppliers/${id}`, { method: "DELETE" })
       .then(() => {
         setSuppliers((prev) => prev.filter((supplier) => supplier.id !== id));
       });

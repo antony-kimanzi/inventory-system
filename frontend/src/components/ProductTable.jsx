@@ -11,14 +11,14 @@ const ProductTable = () => {
 
   // Fetch all products
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/products")
+    fetch("https://inventory-system-y7yr.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data));
   }, []);
 
   // Create a new product
   const handleCreate = () => {
-    fetch("http://127.0.0.1:8000/products", {
+    fetch("https://inventory-system-y7yr.onrender.com/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -67,7 +67,7 @@ const ProductTable = () => {
       ...(updatedSupplierId && { supplier_id: updatedSupplierId }),
     };
 
-    fetch(`http://127.0.0.1:8000/products/${id}`, {
+    fetch(`https://inventory-system-y7yr.onrender.com/products/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedData),
@@ -86,7 +86,7 @@ const ProductTable = () => {
 
   // Delete a product
   const handleDelete = (id) => {
-    fetch(`http://127.0.0.1:8000/products/${id}`, { method: "DELETE" })
+    fetch(`https://inventory-system-y7yr.onrender.com/products/${id}`, { method: "DELETE" })
       .then(() => {
         setProducts((prev) => prev.filter((product) => product.id !== id));
       });
