@@ -19,7 +19,7 @@ You can access the slide of the presentation using this link [inventory-system-g
 * You can view the demo on [presentation](https://drive.google.com/file/d/1NJ6tXMja1zmcXiMkiAk9CXGaHehVtEsO/view)
 
 ## Known Bugs
-The application works perfectly well, no bugs.
+There is a problem with the loading of data due to rendering.
 
 ## Technologies Used
 React, Python, SQLalchemy, alembic and fastAPI.
