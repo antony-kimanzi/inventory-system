@@ -6,9 +6,8 @@ name = "pypi"
 [packages]
 sqlalchemy = "*"
 alembic = "*"
-uvicorn = "*"
-psycopg2-binary = "*"
-fastapi = "*"
+psycopg2 = "*"
+fastapi = {extras = ["standard"], version = "*"}
 
 [dev-packages]
 

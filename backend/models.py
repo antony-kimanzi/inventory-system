@@ -34,7 +34,7 @@ class Product(Base):
     supplier_id = Column(Integer, ForeignKey("suppliers.id"))
 
     suppliers = relationship("Supplier", back_populates="products")
-    stocks = relationship("Stocks", back_populates="products")
+    stocks = relationship("Stock", back_populates="products")
 
 class Stock(Base):
     __tablename__ = "stocks"
