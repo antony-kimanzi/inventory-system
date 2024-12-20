@@ -1,5 +1,5 @@
 # Inventory System
-#### The app is An Inventory System, 15/11/2024
+#### The app is An Inventory System, 20/12/2024
 #### **By Antony Wambugu**
 ## Description
 This project focuses on building an Inventory Management System designed to streamline the management of inventory items for warehouses or businesses. The system leverages modern technologies such as SQLAlchemy for database modeling, React for a user-friendly frontend interface, and a fast API for handling transactions. It provides dynamic and efficient tools to manage products, monitor stock levels, and track suppliers.
@@ -28,6 +28,6 @@ React, Python, SQLalchemy, alembic and fastAPI.
 email :: antony.wambugu@student.moringaschool.com
 
 ### License
-*LIcenced under the [MT-licence](https://github.com/antony-kimanzi/inventory-system/blob/main/frontend/LICENSE.md)*
+*LIcenced under the [MT-licence](https://github.com/antony-kimanzi/inventory-system/blob/main/LICENSE.md)*
 
 Copyright (c) 2024 **Antony Wambugu**
